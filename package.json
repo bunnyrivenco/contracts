@@ -1,0 +1,23 @@
+{
+    "name": "hardhat-project",
+    "scripts": {
+        "clean": "npx hardhat clean",
+        "build": "npx hardhat compile",
+        "deploy": "npx hardhat run --network bsc",
+        "verify": "npx hardhat verify --network bsc",
+        "test": "npx hardhat test"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+        "@nomiclabs/hardhat-ethers": "^2.2.1",
+        "@openzeppelin/hardhat-upgrades": "^1.21.0",
+        "dotenv": "^16.0.3",
+        "ethers": "^5.7.2",
+        "hardhat": "^2.12.3",
+        "hardhat-gas-reporter": "^1.0.9"
+    },
+    "dependencies": {
+        "@chainlink/contracts": "^0.5.1",
+        "@openzeppelin/contracts": "^4.8.0"
+    }
+}
